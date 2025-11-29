@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest"href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aiu dev projects</title>
+    <style>
+        *{
+            margin: 0ex;
+            padding: 0ex;
+        }
+        body{
+            background: white;
+            color: white;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 30px;
+             border-radius:25px ;
+            margin-left: 30px;
+            background:grey;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            box-shadow:2px 2px black ;
+            animation:move 1s ;
+        }
+        .header h2,h3{
+            margin: 20px;
+            padding: 10px;
+            text-align:center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 2px;
+        }
+        button{
+            color: white;
+            margin-bottom: 30px;
+            border: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 30px;
+            background-color: rgb(110, 122, 243);
+        }
+        img{
+           height: 200px;
+           width: 200px;
+           border-radius: 200px;
+        }
+    @keyframes move{
+        from{transform:scale(0.4);}
+        to{transform:scake(1);}
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>AiU DeV Projects</h2>
+        <img src="images/profile.png">
+        <h3>Abubakar Ibrahim Umar</h3>
+        <button onclick="window.open('projects.html')"zaqwwq12w18om,78,kkkl0lk780ldreer43>click to view</button>
+      
+    </div>
+</body>
+<script>
+ if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+</html>

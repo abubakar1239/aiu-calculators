@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <style>
+        *{
+            margin: 0in;
+            padding: 0pt;
+
+        }
+        .header{
+            color: darkgreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding:15px;
+            margin-bottom: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+         background:grey;
+         display: flex;
+         margin:5px;
+         justify-content: center;
+         align-items: center;
+          padding:40px;
+          border-radius:25px;
+          box-shadow:3px 3px black;
+          animation:move 1s 1;
+        }
+        img{
+            height: 120px;
+            width: 150px;
+            border-radius: 25px;
+            transition: transform 0.7s;
+        }
+        .grid-container{
+            display: grid;
+            gap: 4px;
+            justify-content: space-between;
+            grid-gap: 5px;
+            grid-template-columns: repeat(2,1fr);
+        }
+        a{
+            transition: transform 0.7s;
+        }
+        img:hover{
+           transform: scale(0.8);
+ 
+
+        }
+        footer{
+            text-align: center;
+            padding: 30px;
+            margin-top: 90px;
+
+        }
+     @keyframes move{
+        from{transform:scale(0.4);}
+        to{transform:scake(1);}
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>AiU DeV Projects</h2>
+
+    </div>
+    <div class="container">
+        <div class="grid-container">
+            <div class="div1">
+                 <a href=" https://aiu-calculator.vercel.app">  
+                <img src="images/calculator.png">
+                    </a> 
+            </div>
+            <div class="div2">
+                <a href=" https://aiu-qecalculator.vercel.app">
+                    <img src="images/qecalculator.png">
+                </a>
+               
+            </div>
+           
+            <div class="div4">
+                <a href="https://aiu-ohmslaw.vercel.app">
+                   <img src="images/ohmslaw.png">
+                </a>
+                
+            </div> 
+            <div class="div3">
+               <a href="https://counter-gray-seven.vercel.app"><img src="images/counterlogo.png"></a> 
+            </div>         
+        </div>
+      
+    </div>
+    <footer>
+        <p class="copyright">&copy; 2025 Aiu Dev all rights reserved</p>
+    </footer>
+</body>
+</html>
